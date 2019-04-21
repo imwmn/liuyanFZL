@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="addUserView" class="com.wmn.action.UserAction"
+			method="addUserView">
+			<result name="success">/addUser.jsp</result>
+			<result name="error">/main.jsp</result>
+		</action>
+		<action name="addUser" class="com.wmn.action.UserAction"
+			method="addUser">
+			<result name="success">/successAddUser.jsp</result>
+			<result name="error">/main.jsp</result>
+		</action>
+
+		<action name="addLiuyanView" class="com.wmn.action.LiuyanAction"
+			method="addLiuyanView">
+			<result name="success">/addLiuyan.jsp</result>
+		</action>
+		<action name="addLiuyan" class="com.wmn.action.LiuyanAction"
+			method="addLiuyan">
+			<result name="success">/successAddLiuyan.jsp</result>
+			<result name="error">/main.jsp</result>
+		</action>
+
+		<action name="listUser" class="com.wmn.action.UserAction"
+			method="listUser">
+			<result name="success">/listUser.jsp</result>
+		</action>
+		<action name="updateUserView" class="com.wmn.action.UserAction"
+			method="updateUserView">
+			<result name="success">/updateUser.jsp</result>
+		</action>
+		<action name="updateUser" class="com.wmn.action.UserAction"
+			method="updateUser">
+			<result name="success">/successUpdateUser.jsp</result>
+		</action>
+
+		<action name="deleteUser" class="com.wmn.action.UserAction"
+			method="deleteUser">
+			<result name="success">/successDeleteUser.jsp</result>
+			<result name="error">/deleteUserErrorHint.jsp</result>
+
+		</action>
+
+		<action name="listLiuyan" class="com.wmn.action.LiuyanAction"
+			method="listLiuyan">
+			<result name="success">/listLiuyan.jsp</result>
+		</action>
+		<action name="updateLiuyanView" class="com.wmn.action.LiuyanAction"
+			method="updateLiuyanView">
+			<result name="success">/updateLiuyan.jsp</result>
+		</action>
+
+		<action name="updateLiuyan" class="com.wmn.action.LiuyanAction"
+			method="updateLiuyan ">
+			<result name="success">/successUpdateLiuyan.jsp</result>
+		</action>
+
+<action name="deleteLiuyan" class="com.wmn.action.LiuyanAction"	method="deleteLiuyan">
+	<result name="success">/successDeleteLiuyan.jsp</result>
+</action>
+
+	</package>
+
+</struts>    
