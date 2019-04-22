@@ -149,9 +149,11 @@ public class LiuyanAction
     return "error";
   }
   
+ 
+  
   public String deleteLiuyan()
   {
-    int id = Integer.parseInt(this.request.getParameter("deleteLiuyan.id"));
+     int id = Integer.parseInt(this.request.getParameter("deleteLiuyan.id"));
     
     BasicConfigurator.configure();
     
